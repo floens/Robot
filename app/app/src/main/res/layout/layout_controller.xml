@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.itopia.rowcontroller.ui.layout.ControllerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.itopia.rowcontroller.ui.layout.CameraLayout
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <com.itopia.rowcontroller.ui.view.CompassView
+            android:id="@+id/compass_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="16dp"
+            android:layout_gravity="top|right" />
+
+        <com.itopia.rowcontroller.ui.view.ConnectionStatusView
+            android:id="@+id/connection_status_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.itopia.rowcontroller.ui.view.MotorControlView
+            android:id="@+id/motor_control_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:visibility="gone" />
+
+</com.itopia.rowcontroller.ui.layout.ControllerLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">RoW controller</string>
+
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="bluetooth_connected">Bluetooth connected</string>
+    <string name="bluetooth_disconnected">Bluetooth disconnected</string>
+
+    <string name="tcp_connected">TCP connected</string>
+    <string name="tcp_disconnected">TCP disconnected</string>
+    <string name="address_hint">TCP address:port</string>
+    <string name="address_invalid">Address invalid</string>
+
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+
+    <string name="menu_address">Address</string>
+
+    <string name="menu_advanced_options">Advanced options</string>
+
+    <string name="scan">Scan</string>
+    <string name="scanning">Scanning</string>
+    <string name="scan_idle">No result</string>
+    <string name="send_command">Send command</string>
+    <string name="send_command_hint">Command to send</string>
+    <string name="toggle_autoscan">Toggle autoscan</string>
+</resources>

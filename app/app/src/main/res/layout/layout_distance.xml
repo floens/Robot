@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.itopia.rowcontroller.ui.layout.DistanceLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/distance_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:textSize="32sp" />
+
+    <SeekBar
+        android:id="@+id/position_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.itopia.rowcontroller.ui.view.DistanceView
+        android:id="@+id/distance_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.itopia.rowcontroller.ui.layout.DistanceLayout>

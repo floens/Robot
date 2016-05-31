@@ -1,0 +1,16 @@
+Robots on Wheels school project
+-----
+
+Robots on Wheels is the project for the third semester of technical computing. This code is the finished product to control the robot car given to us. The robot car runs on a Raspberry PI. The car has four wheels whose speed can be controlled. It has a distance sensor mounted on a servo to detect distance for a wide range in front of it. It has a compass to measure what orientation the car is. We attached a WiFi module that connects to the school WiFi and the Android app connects to that.
+
+The projects consists of a C project in the folder `controller` that runs on the pi that communicates with the Android app in the folder `app` to control the robot.
+
+The code has useful networking code for both the C code and the Android code, and other interesting C stuff that I want to use in other projects.
+
+It has some references to bluetooth but none of it is implemented. All communication goes over TCP with WiFi.
+
+The networking code is not protected for any malicious attacks, keep that in mind.
+
+Due to the PWM producing both signals for the distance sensor servo and audio, both cannot be run at the same time. The flag WITH_PWM_FLAG in the Makefile controls this. A reboot is required after changing this.
+
+OpenALPR increases the compilation time significantly and can be disabled with the ALPR_FLAG. Disabling alpr will fall back to a no-op implementation.

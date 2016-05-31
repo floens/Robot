@@ -1,0 +1,29 @@
+<div class="container">
+    <img class="camera" src="">
+</div>
+
+<script>
+    var image = document.querySelector('.camera');
+
+    var load = function() {
+        image.onerror = function() {
+            setTimeout(load, 1000);
+        };
+        image.src = '__URL__';
+    };
+
+    load();
+
+
+</script>
+
+<style>
+    html, body{
+    margin: 0;
+    padding: 0;
+    }
+
+    img.camera {
+    width: 100%;
+    }
+</style>
